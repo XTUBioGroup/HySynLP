@@ -36,21 +36,5 @@ pip install torch-geometric==2.0.4 rdkit
 
 ## 3. Run Experiment
 
-To train and evaluate the full 5-fold cross-validation pipeline:
-
-```bash
-# Run on DrugComb (default)
 python main_pretrained.py
 
-# Run on ONEIL dataset
-python main_pretrained.py --dataset ONEIL
-
-# Run on ALMANAC dataset
-python main_pretrained.py --dataset ALMANAC
-```
-
----
-
-## 4. License
-
-This project is licensed under the MIT License.
