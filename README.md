@@ -1,24 +1,8 @@
-# HySynLP: Synergistic Drug Combination Prediction
-
-HySynLP is a hypergraph neural network framework for anti-cancer synergistic drug combination prediction, combining pre-trained molecular representations (MolCLR), active subgraph sampling with GAT, dynamic hypergraph evolution (DHGNN), hypergraph Laplacian spectral positional encodings (LapPE), symmetric permutation-invariant decoding, and multi-task optimization.
+# HySynLP: Synergistic Drug Combination  
 
 ---
 
-## 1. Project Structure
-
-```text
-HySynLP/
-├── Datasets/                 # Gene expression, SMILES, synergy data, and sampled subgraphs
-├── pretrained/               # Pre-trained MolCLR weights (gcn_model.pth)
-├── model_pretrained.py       # Core neural network architectures
-├── utils_pretrained.py       # Graph utilities, spectral encoding, losses, and EMA
-├── main_pretrained.py        # 5-fold cross-validation training and evaluation pipeline
-└── README.md                 # Project documentation
-```
-
----
-
-## 2. Environment Setup
+## 1. Environment Setup
 
 ```bash
 # Recommended: Python 3.10, PyTorch 1.11.0 with CUDA 11.3
@@ -34,7 +18,7 @@ pip install torch-geometric==2.0.4 rdkit
 
 ---
 
-## 3. Run Experiment
+## 2. Run Experiment
 
 python main_pretrained.py
 
